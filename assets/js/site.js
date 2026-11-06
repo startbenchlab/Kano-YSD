@@ -550,31 +550,38 @@
   }
 
   /* -------------------------------------------------------------------------
-     Gallery scroller
+     Horizontal scrollers (gallery + homepage news)
      ---------------------------------------------------------------------- */
-  const gallery = $('[data-gallery]');
-  if (gallery) {
+  function initScroller(track, prev, next) {
+    if (!track) return;
+
     const step = () => {
-      const first = gallery.firstElementChild;
+      const first = track.firstElementChild;
       if (!first) return 340;
-      const styles = window.getComputedStyle(gallery);
+      const styles = window.getComputedStyle(track);
       const gap = Number.parseFloat(styles.columnGap || styles.gap || '20') || 20;
       return first.getBoundingClientRect().width + gap;
     };
 
-    const galleryPrev = $('[data-gallery-prev]');
-    const galleryNext = $('[data-gallery-next]');
+    const scroll = (direction) => {
+      track.scrollBy({ left: step() * direction, behavior: reduceMotion ? 'auto' : 'smooth' });
+    };
 
-    galleryPrev &&
-      galleryPrev.addEventListener('click', () => {
-        gallery.scrollBy({ left: -step(), behavior: reduceMotion ? 'auto' : 'smooth' });
-      });
-
-    galleryNext &&
-      galleryNext.addEventListener('click', () => {
-        gallery.scrollBy({ left: step(), behavior: reduceMotion ? 'auto' : 'smooth' });
-      });
+    if (prev) prev.addEventListener('click', () => scroll(-1));
+    if (next) next.addEventListener('click', () => scroll(1));
   }
+
+  initScroller(
+    $('[data-gallery]'),
+    $('[data-gallery-prev]'),
+    $('[data-gallery-next]')
+  );
+
+  initScroller(
+    $('[data-news-track]'),
+    $('[data-news-prev]'),
+    $('[data-news-next]')
+  );
 
   /* -------------------------------------------------------------------------
      Programme filtering + search
