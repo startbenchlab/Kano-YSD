@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{> head}}
+</head>
+<body data-page="{{PAGE}}" class="overflow-x-hidden">
+{{> header}}
+
+<main id="main">
+  <section class="page-banner">
+    <div class="pointer-events-none absolute inset-0 pattern-grid opacity-50" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand/15 blur-3xl" aria-hidden="true"></div>
+    <div class="shell relative">
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-[11px] font-semibold text-white/45">
+        <a href="index.html" class="breadcrumb-link">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        <span class="text-white/80">Programs</span>
+      </nav>
+      <div class="mt-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <p class="eyebrow eyebrow-light">What we deliver</p>
+          <h1 class="mt-3 text-[2.6rem] font-extrabold leading-[1.02] tracking-[-0.045em] text-white sm:text-[3.4rem] lg:text-[4rem]">Programs &amp; <em class="font-display font-normal italic text-brand">opportunities.</em></h1>
+        </div>
+        <p class="max-w-md text-[13.5px] leading-7 text-white/55 lg:pb-2">Sporting competitions, youth exchanges, coaching clinics and talent pathways delivered across Kano State.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20">
+    <div class="shell">
+      <div class="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div class="max-w-xl">
+          <p class="eyebrow">Explore</p>
+          <h2 class="section-title mt-4">Find your next <em>opportunity.</em></h2>
+        </div>
+        <div class="flex w-full max-w-sm items-center gap-3 rounded-2xl border border-line bg-white px-4 shadow-soft">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 shrink-0 text-muted" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label for="program-search" class="sr-only">Search programmes</label>
+          <input id="program-search" type="search" data-program-search placeholder="Search programmes..." class="h-12 w-full bg-transparent text-sm font-semibold text-ink outline-none placeholder:font-medium placeholder:text-muted/70">
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1 mt-8 flex flex-col gap-4 border-y border-line py-5 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Filter programmes by category">
+          <button type="button" data-filter="all" class="rounded-full bg-ink px-4 py-2 text-[11px] font-extrabold text-white transition hover:bg-ink-800 aria-pressed:bg-ink" aria-pressed="true">All programmes</button>
+          <button type="button" data-filter="sports" class="rounded-full border border-line bg-white px-4 py-2 text-[11px] font-extrabold text-ink/65 transition hover:border-brand hover:text-brand-700" aria-pressed="false">Sports</button>
+          <button type="button" data-filter="youth" class="rounded-full border border-line bg-white px-4 py-2 text-[11px] font-extrabold text-ink/65 transition hover:border-brand hover:text-brand-700" aria-pressed="false">Youth</button>
+          <button type="button" data-filter="community" class="rounded-full border border-line bg-white px-4 py-2 text-[11px] font-extrabold text-ink/65 transition hover:border-brand hover:text-brand-700" aria-pressed="false">Community</button>
+          <button type="button" data-filter="exchange" class="rounded-full border border-line bg-white px-4 py-2 text-[11px] font-extrabold text-ink/65 transition hover:border-brand hover:text-brand-700" aria-pressed="false">Exchange</button>
+        </div>
+        <p class="text-[11.5px] font-semibold text-muted" aria-live="polite">Showing <span data-program-count class="font-extrabold text-ink">6</span> programmes</p>
+      </div>
+
+      <div data-program-grid class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article data-program-card data-category="sports" data-title="Kano State Sports Festival" class="reveal group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <a href="contact.html?subject=Kano%20State%20Sports%20Festival" class="relative block overflow-hidden">
+            <img src="assets/images/program-sports-1.webp" alt="Athletes competing at a Kano State sports event" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-ink shadow-soft">Sports</span>
+          </a>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[9.5px] font-extrabold uppercase tracking-[0.16em] text-brand-700">Annual &middot; Statewide</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Kano State Sports Festival</h3>
+            <p class="mt-2 flex-1 text-[12.5px] leading-6 text-muted">A statewide celebration of grassroots talent, bringing athletes and communities together across the 44 LGAs.</p>
+            <a href="contact.html?subject=Kano%20State%20Sports%20Festival" class="link-arrow mt-5">
+              Enquire about this programme
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article data-program-card data-category="youth sports" data-title="Youth Football Development League" class="reveal reveal-delay-1 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <a href="contact.html?subject=Youth%20Football%20Development%20League" class="relative block overflow-hidden">
+            <img src="assets/images/program-sports-2.webp" alt="Youth football players in a development league match" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-ink shadow-soft">Sports</span>
+          </a>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[9.5px] font-extrabold uppercase tracking-[0.16em] text-brand-700">League &middot; Youth</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Youth Football Development League</h3>
+            <p class="mt-2 flex-1 text-[12.5px] leading-6 text-muted">Structured competition and coaching support for youth teams, with a focus on talent identification and fair play.</p>
+            <a href="contact.html?subject=Youth%20Football%20Development%20League" class="link-arrow mt-5">
+              Enquire about this programme
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article data-program-card data-category="exchange youth" data-title="Netherlands Youth Exchange" class="reveal reveal-delay-2 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <a href="news.html#netherlands" class="relative block overflow-hidden">
+            <img src="assets/images/program-netherlands.webp" alt="Kano youth delegation on an international exchange visit" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-ink shadow-soft">Exchange</span>
+          </a>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[9.5px] font-extrabold uppercase tracking-[0.16em] text-brand-700">Exchange &middot; International</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Netherlands Youth Exchange</h3>
+            <p class="mt-2 flex-1 text-[12.5px] leading-6 text-muted">International learning and cultural exchange for young leaders, coaches and youth workers from Kano State.</p>
+            <a href="news.html#netherlands" class="link-arrow mt-5">
+              Read about the exchange
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article data-program-card data-category="sports youth" data-title="Grassroots Coaching Clinic" class="reveal group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <a href="contact.html?subject=Grassroots%20Coaching%20Clinic" class="relative block overflow-hidden">
+            <img src="assets/images/program-sports-3.webp" alt="Community football coaches during a training clinic" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-ink shadow-soft">Youth</span>
+          </a>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[9.5px] font-extrabold uppercase tracking-[0.16em] text-brand-700">Training &middot; Coaches</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Grassroots Coaching Clinic</h3>
+            <p class="mt-2 flex-1 text-[12.5px] leading-6 text-muted">Capacity building for community coaches on safe, inclusive and modern training practice.</p>
+            <a href="contact.html?subject=Grassroots%20Coaching%20Clinic" class="link-arrow mt-5">
+              Enquire about this programme
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article data-program-card data-category="community sports" data-title="Kano 5-asides Championship" class="reveal reveal-delay-1 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <a href="sports.html#five-asides" class="relative block overflow-hidden">
+            <img src="assets/images/program-sports-4.webp" alt="Players competing in a five-a-side football match in Kano" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-ink shadow-soft">Community</span>
+          </a>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[9.5px] font-extrabold uppercase tracking-[0.16em] text-brand-700">Competition &middot; Community</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Kano 5-asides Championship</h3>
+            <p class="mt-2 flex-1 text-[12.5px] leading-6 text-muted">Fast, inclusive community football bringing neighbourhoods together through five-a-side competition.</p>
+            <a href="sports.html#five-asides" class="link-arrow mt-5">
+              Explore 5-asides
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article data-program-card data-category="youth" data-title="Schools Athletics and Talent ID" class="reveal reveal-delay-2 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <a href="contact.html?subject=Schools%20Athletics%20and%20Talent%20ID" class="relative block overflow-hidden">
+            <img src="assets/images/program-sports-5.webp" alt="Students taking part in a school athletics event" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-ink shadow-soft">Youth</span>
+          </a>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[9.5px] font-extrabold uppercase tracking-[0.16em] text-brand-700">Athletics &middot; Schools</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Schools Athletics &amp; Talent ID</h3>
+            <p class="mt-2 flex-1 text-[12.5px] leading-6 text-muted">Athletics trials and talent identification for secondary school students across Kano State.</p>
+            <a href="contact.html?subject=Schools%20Athletics%20and%20Talent%20ID" class="link-arrow mt-5">
+              Enquire about this programme
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div data-program-empty class="mt-10 hidden rounded-3xl border border-dashed border-line bg-cloud px-6 py-16 text-center">
+        <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white text-muted shadow-soft">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </span>
+        <h3 class="mt-5 text-lg font-extrabold">No programmes match your search</h3>
+        <p class="mt-2 text-[13px] text-muted">Try a different keyword or choose another category.</p>
+        <button type="button" data-program-reset class="btn btn-ghost mt-6">Clear filters</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-cloud py-20 lg:py-24">
+    <div class="shell">
+      <div class="reveal flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="eyebrow">Taking part</p>
+          <h2 class="section-title mt-4">Three steps to <em>get involved.</em></h2>
+        </div>
+        <a href="register.html" class="link-arrow">
+          Start your registration
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        <div class="reveal rounded-3xl border border-line bg-white p-7 shadow-soft">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-5 w-5" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </span>
+          <h3 class="mt-5 text-lg font-extrabold">Register your interest</h3>
+          <p class="mt-2 text-[12.5px] leading-6 text-muted">Join the Ministry register so we can match you to the right programme or competition.</p>
+        </div>
+        <div class="reveal reveal-delay-1 rounded-3xl border border-line bg-white p-7 shadow-soft">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-5 w-5" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/><path d="M10 21h4"/></svg>
+          </span>
+          <h3 class="mt-5 text-lg font-extrabold">Watch for announcements</h3>
+          <p class="mt-2 text-[12.5px] leading-6 text-muted">Programme dates, venues and application windows are published on the website and by email.</p>
+        </div>
+        <div class="reveal reveal-delay-2 rounded-3xl border border-line bg-white p-7 shadow-soft">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-5 w-5" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <h3 class="mt-5 text-lg font-extrabold">Take part</h3>
+          <p class="mt-2 text-[12.5px] leading-6 text-muted">Turn up, compete, learn and connect with other young people and sports organisations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden bg-brand py-14 text-ink">
+    <div class="pointer-events-none absolute inset-0 pattern-dots opacity-30" aria-hidden="true"></div>
+    <div class="shell relative flex flex-col items-start justify-between gap-7 md:flex-row md:items-center">
+      <div class="max-w-2xl">
+        <h2 class="text-[1.9rem] font-extrabold leading-tight tracking-[-0.035em] sm:text-[2.4rem]">Not sure which programme is <em class="font-display font-normal italic">right for you?</em></h2>
+        <p class="mt-2 text-[13.5px] font-semibold text-ink/65">Talk to our team and we will point you in the right direction.</p>
+      </div>
+      <a href="contact.html" class="btn btn-dark shrink-0">
+        Contact the Ministry
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

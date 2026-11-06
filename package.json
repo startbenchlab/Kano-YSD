@@ -1,0 +1,15 @@
+{
+  "name": "kano-ysd-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public website for the Kano State Ministry of Youth and Sports Development",
+  "scripts": {
+    "build:pages": "node scripts/build-pages.mjs",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/site.css --minify",
+    "build": "npm run build:pages && npm run build:css",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/css/site.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

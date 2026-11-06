@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{> head}}
+</head>
+<body data-page="{{PAGE}}" class="overflow-x-hidden">
+{{> header}}
+
+<main id="main">
+  <section class="page-banner">
+    <div class="pointer-events-none absolute inset-0 pattern-grid opacity-50" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand/15 blur-3xl" aria-hidden="true"></div>
+    <div class="shell relative">
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-[11px] font-semibold text-white/45">
+        <a href="index.html" class="breadcrumb-link">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        <span class="text-white/80">Registration</span>
+      </nav>
+      <div class="mt-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <p class="eyebrow eyebrow-light">Join the register</p>
+          <h1 class="mt-3 text-[2.6rem] font-extrabold leading-[1.02] tracking-[-0.045em] text-white sm:text-[3.4rem] lg:text-[4rem]">Register with the <em class="font-display font-normal italic text-brand">Ministry.</em></h1>
+        </div>
+        <p class="max-w-md text-[13.5px] leading-7 text-white/55 lg:pb-2">Free, secure and open to young people, youth groups, associations and sports clubs across Kano State.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 lg:py-24">
+    <div class="shell">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <p class="eyebrow justify-center">Choose your pathway</p>
+        <h2 class="section-title mt-4">Four ways to <em>get started.</em></h2>
+        <p class="section-copy mx-auto mt-4 max-w-xl">Select the option that best describes you. Each pathway opens the official registration portal in a new tab.</p>
+      </div>
+
+      <div class="mt-12 grid gap-5 md:grid-cols-2">
+        <article class="reveal group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-white p-7 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+          <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true"></div>
+          <div class="relative flex items-start justify-between gap-4">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 transition-colors group-hover:bg-brand group-hover:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            </span>
+            <span class="rounded-full bg-cloud px-3 py-1 text-[9px] font-extrabold uppercase tracking-[0.14em] text-muted">Individual</span>
+          </div>
+          <h3 class="relative mt-6 text-xl font-extrabold tracking-tight">Youth registration</h3>
+          <p class="relative mt-2 text-[13px] leading-6 text-muted">For young people resident in Kano State who want to join the official youth register and access programmes, opportunities and support.</p>
+          <ul class="relative mt-5 space-y-2 text-[11.5px] font-semibold text-ink/65">
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Personal and contact details</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> LGA and ward of residence</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Areas of interest</li>
+          </ul>
+          <a href="https://kanostateyouthandsportsdev.netlify.app/Youth_Registration" target="_blank" rel="noopener" class="btn btn-primary relative mt-7 w-full">
+            Start individual registration
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+
+        <article class="reveal reveal-delay-1 group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-white p-7 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+          <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true"></div>
+          <div class="relative flex items-start justify-between gap-4">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 transition-colors group-hover:bg-brand group-hover:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true"><path d="M16 20v-1.5a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4V20"/><circle cx="9" cy="7" r="3"/><path d="M17 11a3 3 0 1 0 0-6M22 20v-1.5a4 4 0 0 0-3-3.8"/></svg>
+            </span>
+            <span class="rounded-full bg-cloud px-3 py-1 text-[9px] font-extrabold uppercase tracking-[0.14em] text-muted">Group</span>
+          </div>
+          <h3 class="relative mt-6 text-xl font-extrabold tracking-tight">Association or group</h3>
+          <p class="relative mt-2 text-[13px] leading-6 text-muted">For community youth associations, student groups, volunteer networks and other collectives contributing to youth development.</p>
+          <ul class="relative mt-5 space-y-2 text-[11.5px] font-semibold text-ink/65">
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Group identity and description</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Leadership and contact details</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Location and areas of focus</li>
+          </ul>
+          <a href="https://kanostateyouthandsportsdev.netlify.app/Associations_Registration" target="_blank" rel="noopener" class="btn btn-dark relative mt-7 w-full">
+            Register a group
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+
+        <article class="reveal group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-white p-7 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+          <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true"></div>
+          <div class="relative flex items-start justify-between gap-4">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 transition-colors group-hover:bg-brand group-hover:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m12 7 3 2.2-1.1 3.6h-3.8L9 9.2 12 7Z"/><path d="M12 3v4M4.3 9.5l4.7 2M8.3 20l2.1-3.3M15.7 20l-2.1-3.3M19.7 9.5l-4.7 2"/></svg>
+            </span>
+            <span class="rounded-full bg-cloud px-3 py-1 text-[9px] font-extrabold uppercase tracking-[0.14em] text-muted">Sports</span>
+          </div>
+          <h3 class="relative mt-6 text-xl font-extrabold tracking-tight">Sports club registration</h3>
+          <p class="relative mt-2 text-[13px] leading-6 text-muted">For football clubs, sports associations and community teams operating in Kano State that want to be recognised and supported.</p>
+          <ul class="relative mt-5 space-y-2 text-[11.5px] font-semibold text-ink/65">
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Club identity and category</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Officials and contact details</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Home LGA and facilities</li>
+          </ul>
+          <a href="https://kanostateyouthandsportsdev.netlify.app/Sports_Club_Registration" target="_blank" rel="noopener" class="btn btn-dark relative mt-7 w-full">
+            Register a sports club
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+
+        <article class="reveal reveal-delay-1 group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-white p-7 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+          <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true"></div>
+          <div class="relative flex items-start justify-between gap-4">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 transition-colors group-hover:bg-brand group-hover:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <span class="rounded-full bg-cloud px-3 py-1 text-[9px] font-extrabold uppercase tracking-[0.14em] text-muted">Empowerment</span>
+          </div>
+          <h3 class="relative mt-6 text-xl font-extrabold tracking-tight">Empowerment application</h3>
+          <p class="relative mt-2 text-[13px] leading-6 text-muted">For young people applying for skills training, enterprise support and other Ministry empowerment programmes.</p>
+          <ul class="relative mt-5 space-y-2 text-[11.5px] font-semibold text-ink/65">
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Personal and contact details</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Programme area of interest</li>
+            <li class="flex items-center gap-2"><span class="h-1 w-1 rounded-full bg-brand"></span> Eligibility information</li>
+          </ul>
+          <a href="https://kanostateyouthandsportsdev.netlify.app/Empowerment_Application" target="_blank" rel="noopener" class="btn btn-dark relative mt-7 w-full">
+            Apply for empowerment
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </article>
+      </div>
+
+      <p class="mx-auto mt-8 max-w-2xl text-center text-[11.5px] leading-6 text-muted">
+        Registration is free. The Ministry will never ask you to pay to register through this website. Only use the official portal links above.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-cloud py-20 lg:py-24">
+    <div class="shell grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+      <div class="reveal">
+        <p class="eyebrow">Before you begin</p>
+        <h2 class="section-title mt-4">Have these details <em>ready.</em></h2>
+        <p class="section-copy mt-4 max-w-lg">The more complete your information, the faster the Ministry can process your registration.</p>
+
+        <ul class="mt-8 space-y-4">
+          <li class="flex items-start gap-4 rounded-2xl border border-line bg-white p-4 shadow-soft">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-4 w-4" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13px] font-extrabold">A valid email address and phone number</p>
+              <p class="mt-0.5 text-[11.5px] leading-5 text-muted">Needed for account verification and status updates.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 rounded-2xl border border-line bg-white p-4 shadow-soft">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-4 w-4" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13px] font-extrabold">Your location in Kano State</p>
+              <p class="mt-0.5 text-[11.5px] leading-5 text-muted">Local Government Area and ward of residence or operation.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 rounded-2xl border border-line bg-white p-4 shadow-soft">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-4 w-4" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13px] font-extrabold">Organisation or club details</p>
+              <p class="mt-0.5 text-[11.5px] leading-5 text-muted">For groups and clubs: leadership contacts and a short description of your work.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 rounded-2xl border border-line bg-white p-4 shadow-soft">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-4 w-4" aria-hidden="true"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
+            </span>
+            <div>
+              <p class="text-[13px] font-extrabold">Supporting documents, where applicable</p>
+              <p class="mt-0.5 text-[11.5px] leading-5 text-muted">Any documents required by your chosen pathway, as listed in the portal.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="sticky top-24 rounded-3xl bg-ink p-7 text-white shadow-card sm:p-9">
+          <div class="pointer-events-none absolute inset-0 pattern-dots-light opacity-40" aria-hidden="true"></div>
+          <div class="relative">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-brand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            </span>
+            <h3 class="mt-6 text-xl font-extrabold">Already have an account?</h3>
+            <p class="mt-2 text-[13px] leading-6 text-white/55">Sign in to the Management Portal to continue a draft application, check your status or update your profile.</p>
+            <a href="https://kanostateyouthandsportsdev.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary mt-7 w-full">
+              Sign in to the portal
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <div class="mt-6 border-t border-white/10 pt-6">
+              <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-white/35">Need a hand?</p>
+              <a href="contact.html" class="mt-3 flex items-center justify-between rounded-2xl bg-white/[0.06] px-4 py-3 text-[12.5px] font-semibold text-white/75 transition hover:bg-white/10 hover:text-white">
+                Contact the registration team
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-4 w-4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 lg:py-24">
+    <div class="shell">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <p class="eyebrow justify-center">How it works</p>
+        <h2 class="section-title mt-4">From application to <em>confirmation.</em></h2>
+      </div>
+      <div class="mt-12 grid gap-5 md:grid-cols-3">
+        <div class="reveal relative rounded-3xl border border-line bg-white p-7 shadow-soft">
+          <span class="font-display text-5xl italic text-brand/25">01</span>
+          <h3 class="mt-4 text-lg font-extrabold">Choose a pathway</h3>
+          <p class="mt-2 text-[12.5px] leading-6 text-muted">Select the registration type that matches you or your organisation.</p>
+        </div>
+        <div class="reveal reveal-delay-1 relative rounded-3xl border border-line bg-white p-7 shadow-soft">
+          <span class="font-display text-5xl italic text-brand/25">02</span>
+          <h3 class="mt-4 text-lg font-extrabold">Complete the form</h3>
+          <p class="mt-2 text-[12.5px] leading-6 text-muted">Create an account, provide your details and upload any required documents.</p>
+        </div>
+        <div class="reveal reveal-delay-2 relative rounded-3xl border border-line bg-white p-7 shadow-soft">
+          <span class="font-display text-5xl italic text-brand/25">03</span>
+          <h3 class="mt-4 text-lg font-extrabold">Track your status</h3>
+          <p class="mt-2 text-[12.5px] leading-6 text-muted">Receive updates by email and follow your application in the portal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-cloud py-20 lg:py-24">
+    <div class="shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+      <div class="reveal">
+        <p class="eyebrow">Questions</p>
+        <h2 class="section-title mt-4">Good to <em>know.</em></h2>
+        <p class="section-copy mt-4">Answers to the questions we hear most often about registration.</p>
+        <a href="contact.html" class="btn btn-ghost mt-7">Ask us something else</a>
+      </div>
+
+      <div class="reveal reveal-delay-1 divide-y divide-line rounded-3xl border border-line bg-white px-6 shadow-soft sm:px-8">
+        <details class="group py-5" open>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[14px] font-extrabold text-ink">
+            Is registration really free?
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-line text-muted transition group-open:rotate-45 group-open:border-brand group-open:bg-brand group-open:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-3 max-w-xl text-[12.5px] leading-6 text-muted">Yes. Registration with the Ministry is free. The Ministry will never ask you to pay to register through this website. Only use the official portal links provided on this page.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[14px] font-extrabold text-ink">
+            Who can register?
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-line text-muted transition group-open:rotate-45 group-open:border-brand group-open:bg-brand group-open:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-3 max-w-xl text-[12.5px] leading-6 text-muted">Young people resident in Kano State, youth groups and associations, sports clubs and eligible applicants for Ministry empowerment programmes. Specific eligibility requirements are shown on each registration pathway.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[14px] font-extrabold text-ink">
+            Can I save my application and come back later?
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-line text-muted transition group-open:rotate-45 group-open:border-brand group-open:bg-brand group-open:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-3 max-w-xl text-[12.5px] leading-6 text-muted">Yes. Once you create an account in the portal, you can save a draft application and return to it later using your login details.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[14px] font-extrabold text-ink">
+            What happens after I submit?
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-line text-muted transition group-open:rotate-45 group-open:border-brand group-open:bg-brand group-open:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-3 max-w-xl text-[12.5px] leading-6 text-muted">You will receive an application reference and status updates. Ministry officers review submissions and may contact you if any clarification or correction is needed.</p>
+        </details>
+        <details class="group py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-[14px] font-extrabold text-ink">
+            Do I need a registered business or NGO certificate?
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-line text-muted transition group-open:rotate-45 group-open:border-brand group-open:bg-brand group-open:text-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <p class="mt-3 max-w-xl text-[12.5px] leading-6 text-muted">Not necessarily. The Ministry recognises that many valuable youth groups operate informally. Required documents are listed on the relevant pathway and are applied according to Ministry policy.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{> head}}
+</head>
+<body data-page="{{PAGE}}" class="overflow-x-hidden">
+{{> header}}
+
+<main id="main">
+  <section class="page-banner">
+    <div class="pointer-events-none absolute inset-0 pattern-grid opacity-50" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand/15 blur-3xl" aria-hidden="true"></div>
+    <div class="shell relative">
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-[11px] font-semibold text-white/45">
+        <a href="index.html" class="breadcrumb-link">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        <span class="text-white/80">Newsroom</span>
+      </nav>
+      <div class="mt-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <p class="eyebrow eyebrow-light">Newsroom</p>
+          <h1 class="mt-3 text-[2.6rem] font-extrabold leading-[1.02] tracking-[-0.045em] text-white sm:text-[3.4rem] lg:text-[4rem]">News &amp; <em class="font-display font-normal italic text-brand">updates.</em></h1>
+        </div>
+        <p class="max-w-md text-[13.5px] leading-7 text-white/55 lg:pb-2">Announcements, programme updates and stories from across the Kano State Ministry of Youth and Sports Development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20">
+    <div class="shell">
+      <div class="grid gap-10 lg:grid-cols-[1.22fr_0.78fr] lg:gap-12">
+        <article id="pillars-visit" class="reveal scroll-mt-24 overflow-hidden rounded-[2rem] border border-line bg-white shadow-soft">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/news-pillars.webp" alt="Kano Pillars players and officials visiting the Governor" width="1200" height="800" class="aspect-[16/10] w-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink-950/65 via-transparent to-transparent" aria-hidden="true"></div>
+            <div class="absolute inset-x-0 bottom-0 flex flex-wrap items-center gap-2 p-5 sm:p-7">
+              <span class="rounded-full bg-brand px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-ink">Sports</span>
+              <span class="rounded-full bg-white/15 px-3 py-1.5 text-[9px] font-extrabold uppercase tracking-[0.14em] text-white backdrop-blur">08 June 2026</span>
+            </div>
+          </div>
+          <div class="p-6 sm:p-8 lg:p-10">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-brand-700">Featured story</p>
+            <h2 class="mt-3 text-[1.8rem] font-extrabold leading-[1.1] tracking-[-0.03em] sm:text-[2.2rem]">Kano Pillars visit the Governor</h2>
+            <p class="mt-4 text-[15px] font-semibold leading-7 text-ink/75">
+              The club presented its season achievements, community plans and youth pathway programme to the State Government.
+            </p>
+            <div class="mt-5 space-y-4 text-[13.5px] leading-7 text-muted">
+              <p>Kano Pillars were received at the Government House for a formal visit celebrating the club&rsquo;s continued contribution to football in Kano State and its work with young players across the city.</p>
+              <p>During the visit, officials outlined plans for stronger grassroots scouting, improved training support and closer collaboration with schools and community clubs. The Ministry will continue to work alongside the club to create clear pathways from local pitches to elite competition.</p>
+            </div>
+            <div class="mt-7 flex flex-col gap-4 border-t border-line pt-5 text-[10.5px] font-semibold text-muted sm:flex-row sm:items-center sm:justify-between">
+              <span>By Ministry Press &middot; 2 min read</span>
+              <a href="sports.html#pillars" class="link-arrow">
+                Explore Kano Pillars
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <aside class="reveal reveal-delay-1">
+          <div class="rounded-[2rem] border border-line bg-white p-6 shadow-soft sm:p-7">
+            <p class="eyebrow">In this issue</p>
+            <h2 class="mt-3 text-xl font-extrabold tracking-tight">Latest headlines</h2>
+            <ul class="mt-5 divide-y divide-line">
+              <li>
+                <a href="#culture" class="group flex gap-4 py-4 first:pt-0">
+                  <span class="w-12 shrink-0 text-[9.5px] font-extrabold uppercase leading-4 tracking-[0.12em] text-brand-700">28 Sep</span>
+                  <span>
+                    <span class="block text-[13px] font-extrabold leading-5 text-ink transition-colors group-hover:text-brand-700">Cultural competition celebrates Kano&rsquo;s young talent</span>
+                    <span class="mt-1 block text-[10.5px] text-muted">3 min read</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#netherlands" class="group flex gap-4 py-4">
+                  <span class="w-12 shrink-0 text-[9.5px] font-extrabold uppercase leading-4 tracking-[0.12em] text-brand-700">28 Sep</span>
+                  <span>
+                    <span class="block text-[13px] font-extrabold leading-5 text-ink transition-colors group-hover:text-brand-700">Netherlands delegation visits Kano State</span>
+                    <span class="mt-1 block text-[10.5px] text-muted">2 min read</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#bauchi" class="group flex gap-4 py-4">
+                  <span class="w-12 shrink-0 text-[9.5px] font-extrabold uppercase leading-4 tracking-[0.12em] text-brand-700">14 Aug</span>
+                  <span>
+                    <span class="block text-[13px] font-extrabold leading-5 text-ink transition-colors group-hover:text-brand-700">Peer learning visit to Bauchi</span>
+                    <span class="mt-1 block text-[10.5px] text-muted">2 min read</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#coaching-clinic" class="group flex gap-4 py-4">
+                  <span class="w-12 shrink-0 text-[9.5px] font-extrabold uppercase leading-4 tracking-[0.12em] text-brand-700">22 Jul</span>
+                  <span>
+                    <span class="block text-[13px] font-extrabold leading-5 text-ink transition-colors group-hover:text-brand-700">Grassroots coaches complete training clinic</span>
+                    <span class="mt-1 block text-[10.5px] text-muted">2 min read</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#registration-drive" class="group flex gap-4 py-4">
+                  <span class="w-12 shrink-0 text-[9.5px] font-extrabold uppercase leading-4 tracking-[0.12em] text-brand-700">15 Oct</span>
+                  <span>
+                    <span class="block text-[13px] font-extrabold leading-5 text-ink transition-colors group-hover:text-brand-700">Youth registration drive reaches all 44 LGAs</span>
+                    <span class="mt-1 block text-[10.5px] text-muted">2 min read</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="relative mt-6 overflow-hidden rounded-[2rem] bg-ink p-6 text-white shadow-card sm:p-7">
+            <div class="pointer-events-none absolute inset-0 pattern-grid opacity-50" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-brand/20 blur-2xl" aria-hidden="true"></div>
+            <div class="relative">
+              <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-brand">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              </span>
+              <h2 class="mt-5 text-xl font-extrabold leading-tight">Media &amp; press enquiries</h2>
+              <p class="mt-2 text-[12.5px] leading-6 text-white/55">For interviews, statements or press accreditation, contact the Ministry communications desk.</p>
+              <a href="mailto:kanostateyouthandsports@gmail.com?subject=Media%20enquiry" class="btn btn-primary btn-sm mt-5">
+                Email the press desk
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-cloud py-20 lg:py-24">
+    <div class="shell">
+      <div class="reveal flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="eyebrow">More from the Ministry</p>
+          <h2 class="section-title mt-4">Stories from across <em>Kano.</em></h2>
+        </div>
+        <a href="programs.html" class="link-arrow">
+          Explore our programmes
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article id="culture" class="reveal scroll-mt-24 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/news-culture.webp" alt="Young performers at the Kano cultural competition" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.12em] text-ink shadow-soft">28 Sep</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-brand-700">Culture</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Cultural competition celebrates Kano&rsquo;s young talent</h3>
+            <p class="mt-3 flex-1 text-[12.5px] leading-6 text-muted">A showcase of creativity, heritage and confidence organised with the Kano Censorship Board. Young performers from across the State took part in music, drama and spoken word.</p>
+            <div class="mt-5 flex items-center justify-between border-t border-line pt-4 text-[10.5px] font-semibold text-muted">
+              <span>By Ministry Press</span>
+              <span>3 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article id="netherlands" class="reveal reveal-delay-1 scroll-mt-24 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/news-netherlands.webp" alt="Netherlands delegation meeting Kano State officials" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.12em] text-ink shadow-soft">28 Sep</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-brand-700">Partnership</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Netherlands delegation visits Kano State</h3>
+            <p class="mt-3 flex-1 text-[12.5px] leading-6 text-muted">Discussions focused on youth exchange, skills development and sports partnerships, with a shared interest in creating international learning opportunities for young leaders.</p>
+            <div class="mt-5 flex items-center justify-between border-t border-line pt-4 text-[10.5px] font-semibold text-muted">
+              <span>By Ministry Press</span>
+              <span>2 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article id="bauchi" class="reveal reveal-delay-2 scroll-mt-24 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/activity-bauchi.webp" alt="Kano State delegation on a peer learning visit to Bauchi" width="1400" height="933" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.12em] text-ink shadow-soft">14 Aug</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-brand-700">Peer learning</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Peer learning visit to Bauchi</h3>
+            <p class="mt-3 flex-1 text-[12.5px] leading-6 text-muted">The Ministry&rsquo;s team met counterparts in Bauchi to exchange ideas on youth employment, sports administration and community programme delivery.</p>
+            <div class="mt-5 flex items-center justify-between border-t border-line pt-4 text-[10.5px] font-semibold text-muted">
+              <span>By Ministry Press</span>
+              <span>2 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article id="coaching-clinic" class="reveal scroll-mt-24 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/program-sports-3.webp" alt="Community football coaches during a training clinic" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.12em] text-ink shadow-soft">22 Jul</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-brand-700">Training</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Grassroots coaches complete training clinic</h3>
+            <p class="mt-3 flex-1 text-[12.5px] leading-6 text-muted">Community coaches from across Kano completed a capacity-building clinic on safe, inclusive and modern training practice for young athletes.</p>
+            <div class="mt-5 flex items-center justify-between border-t border-line pt-4 text-[10.5px] font-semibold text-muted">
+              <span>By Ministry Press</span>
+              <span>2 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article id="registration-drive" class="reveal reveal-delay-1 scroll-mt-24 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/hero-community.webp" alt="Young people and community stakeholders at a Ministry event" width="1920" height="1280" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.12em] text-ink shadow-soft">15 Oct</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-brand-700">Registration</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Youth registration drive reaches all 44 LGAs</h3>
+            <p class="mt-3 flex-1 text-[12.5px] leading-6 text-muted">The State&rsquo;s youth and sports register continues to grow, connecting individuals, groups, associations and clubs to opportunity.</p>
+            <a href="register.html" class="link-arrow mt-5">
+              Register with the Ministry
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article id="sports-festival" class="reveal reveal-delay-2 scroll-mt-24 group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+          <div class="relative overflow-hidden">
+            <img src="assets/images/program-sports-1.webp" alt="Athletes competing at a Kano State sports event" width="1200" height="800" loading="lazy" class="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-105">
+            <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.12em] text-ink shadow-soft">02 Jun</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.18em] text-brand-700">Sports</p>
+            <h3 class="mt-2 text-lg font-extrabold leading-6 tracking-tight">Countdown to the Kano State Sports Festival</h3>
+            <p class="mt-3 flex-1 text-[12.5px] leading-6 text-muted">Preparations are underway for a statewide celebration of grassroots talent, with athletes and communities representing all 44 LGAs.</p>
+            <a href="programs.html?q=sports" class="link-arrow mt-5">
+              Discover sports programmes
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 lg:py-24">
+    <div class="shell">
+      <div class="reveal relative overflow-hidden rounded-[2rem] bg-brand p-7 text-ink shadow-card sm:p-10 lg:p-12">
+        <div class="pointer-events-none absolute inset-0 pattern-dots opacity-30" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full bg-white/25 blur-2xl" aria-hidden="true"></div>
+        <div class="relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+          <div class="max-w-2xl">
+            <p class="text-[10px] font-extrabold uppercase tracking-[0.22em] text-ink/60">Never miss an update</p>
+            <h2 class="mt-3 text-[1.9rem] font-extrabold leading-tight tracking-[-0.035em] sm:text-[2.4rem]">Get Ministry news, opportunities and events <em class="font-display font-normal italic">first.</em></h2>
+            <p class="mt-2 text-[13.5px] font-semibold text-ink/65">Subscribe to the newsletter or follow the Ministry on social media.</p>
+          </div>
+          <div class="flex w-full shrink-0 flex-col gap-3 sm:flex-row lg:w-auto">
+            <a href="index.html#newsletter" class="btn btn-dark">
+              Join the newsletter
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="contact.html" class="btn border border-ink/20 bg-transparent text-ink hover:bg-ink hover:text-white">Contact the Ministry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
